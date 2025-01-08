@@ -11,7 +11,7 @@
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>Index</th>
                     <th>Username</th>
                     <th>Name</th>
                     <th>Role</th>
@@ -21,7 +21,7 @@
                 <tbody>
                 @forelse ($users as $user)
                     <tr>
-                        <td>{{ $user->user_id }}</td>
+                        <td>{{ $user->stt }}</td>
                         <td>{{ $user->user_username }}</td>
                         <td>{{ $user->user_name }}</td>
                         <td>{{ $user->role_name }}</td>
